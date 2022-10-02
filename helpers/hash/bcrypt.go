@@ -2,7 +2,7 @@ package hash
 
 import "golang.org/x/crypto/bcrypt"
 
-//Untuk Hash password daru bcrypt
+//Untuk Hash password dari bcrypt
 func Hash(password string) ([]byte, error) {
 	return bcrypt.GenerateFromPassword([]byte(password), bcrypt.DefaultCost)
 }
